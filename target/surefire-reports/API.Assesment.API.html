@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>API.Assesment.API</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">4</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2021-03-09 07:14:33 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1:6]">[1:6] List of all dog breeds </a>
+</div>
+<div class="nav-item passed">
+<a href="#[2:13]">[2:13] Verify retriever is with in list </a>
+</div>
+<div class="nav-item passed">
+<a href="#[3:21]">[3:21] List of sub breeds for "retriever" </a>
+</div>
+<div class="nav-item passed">
+<a href="#[4:28]">[4:28] Random image / link for sub-breed "golden" </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">API/Assesment/API.feature</span><span class="feature-description">API Assessment</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:6]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:6]</span><span class="scenario-name">List of all dog breeds </span>
+</div>
+<div class="scenario-time passed">ms: 2331</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1:6]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1:6]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">* def json1 = read('test1.json')</div>
+</div>
+<div class="time-cell passed">117</div>
+</div>
+<div class="preformatted" data-parent="1">19:14:28.837 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="step-row">
+<div class="step-container" id="2">
+<div class="step-ref passed">2</div>
+<div class="step-cell passed">Given url 'https://dog.ceo/api/breeds/list/all'</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="3">
+<div class="step-ref passed">3</div>
+<div class="step-cell passed">When method GET</div>
+</div>
+<div class="time-cell passed">2153</div>
+</div>
+<div class="preformatted" data-parent="3">19:14:30.119 request:
+1 &gt; GET https://dog.ceo/api/breeds/list/all
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: dog.ceo
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_281)
+
+19:14:31.134 response time in milliseconds: 995.46
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 0
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 62d5f0abe95b4f99-JNB
+1 &lt; Cache-Control: max-age=1800
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Tue, 09 Mar 2021 17:14:32 GMT
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"max_age":604800,"report_to":"cf-nel"}
+1 &lt; Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=0EDbgnujfQE8mMq3tYElLBXbjwoKwRMBthjJqHmc9EkJ3zGKstryWaeoeqxlNbqmhFCkUXuXdfVH7PXkCpUb4U%2FhM2JXXc9G"}],"max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=d2f5358f405042c0afab3e83f24062a601615310071; expires=Thu, 08-Apr-21 17:14:31 GMT; path=/; domain=.dog.ceo; HttpOnly; SameSite=Lax; Secure
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: 
+1 &lt; Via: 1.1 varnish (Varnish/6.3), 1.1 varnish (Varnish/6.3)
+1 &lt; X-Cache: HIT
+1 &lt; X-Cache-Age: 21247
+1 &lt; X-Cache-Hits: 6648
+1 &lt; X-Powered-By: PHP/7.3.17
+1 &lt; cf-request-id: 08b994bf7100004f9980268000000001
+{"message":{"affenpinscher":[],"african":[],"airedale":[],"akita":[],"appenzeller":[],"australian":["shepherd"],"basenji":[],"beagle":[],"bluetick":[],"borzoi":[],"bouvier":[],"boxer":[],"brabancon":[],"briard":[],"buhund":["norwegian"],"bulldog":["boston","english","french"],"bullterrier":["staffordshire"],"cairn":[],"cattledog":["australian"],"chihuahua":[],"chow":[],"clumber":[],"cockapoo":[],"collie":["border"],"coonhound":[],"corgi":["cardigan"],"cotondetulear":[],"dachshund":[],"dalmatian":[],"dane":["great"],"deerhound":["scottish"],"dhole":[],"dingo":[],"doberman":[],"elkhound":["norwegian"],"entlebucher":[],"eskimo":[],"finnish":["lapphund"],"frise":["bichon"],"germanshepherd":[],"greyhound":["italian"],"groenendael":[],"havanese":[],"hound":["afghan","basset","blood","english","ibizan","plott","walker"],"husky":[],"keeshond":[],"kelpie":[],"komondor":[],"kuvasz":[],"labrador":[],"leonberg":[],"lhasa":[],"malamute":[],"malinois":[],"maltese":[],"mastiff":["bull","english","tibetan"],"mexicanhairless":[],"mix":[],"mountain":["bernese","swiss"],"newfoundland":[],"otterhound":[],"ovcharka":["caucasian"],"papillon":[],"pekinese":[],"pembroke":[],"pinscher":["miniature"],"pitbull":[],"pointer":["german","germanlonghair"],"pomeranian":[],"poodle":["miniature","standard","toy"],"pug":[],"puggle":[],"pyrenees":[],"redbone":[],"retriever":["chesapeake","curly","flatcoated","golden"],"ridgeback":["rhodesian"],"rottweiler":[],"saluki":[],"samoyed":[],"schipperke":[],"schnauzer":["giant","miniature"],"setter":["english","gordon","irish"],"sheepdog":["english","shetland"],"shiba":[],"shihtzu":[],"spaniel":["blenheim","brittany","cocker","irish","japanese","sussex","welsh"],"springer":["english"],"stbernard":[],"terrier":["american","australian","bedlington","border","dandie","fox","irish","kerryblue","lakeland","norfolk","norwich","patterdale","russell","scottish","sealyham","silky","tibetan","toy","westhighland","wheaten","yorkshire"],"vizsla":[],"waterdog":["spanish"],"weimaraner":[],"whippet":[],"wolfhound":["irish"]},"status":"success"}</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref passed">4</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="5">
+<div class="step-ref passed">5</div>
+<div class="step-cell passed">Then print response '---List of all dog breeds---'</div>
+</div>
+<div class="time-cell passed">9</div>
+</div>
+<div class="preformatted" data-parent="5">19:14:31.148 [print]</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref passed">6</div>
+<div class="step-cell passed">And match response == json1[0]</div>
+</div>
+<div class="time-cell passed">47</div>
+</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[2:13]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [2:13]</span><span class="scenario-name">Verify retriever is with in list </span>
+</div>
+<div class="scenario-time passed">ms: 626</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[2:13]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[2:13]bg">
+<div class="step-container" id="7">
+<div class="step-ref bg-step">7</div>
+<div class="step-cell passed">* def json1 = read('test1.json')</div>
+</div>
+<div class="time-cell passed">8</div>
+</div>
+<div class="preformatted" data-parent="7">19:14:31.213 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="step-row">
+<div class="step-container" id="8">
+<div class="step-ref passed">8</div>
+<div class="step-cell passed">Given url  'https://dog.ceo/api/breeds/list/all'</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="9">
+<div class="step-ref passed">9</div>
+<div class="step-cell passed">When method GET</div>
+</div>
+<div class="time-cell passed">602</div>
+</div>
+<div class="preformatted" data-parent="9">19:14:31.228 request:
+1 &gt; GET https://dog.ceo/api/breeds/list/all
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: dog.ceo
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_281)
+
+19:14:31.825 response time in milliseconds: 590.03
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 0
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 62d5f0b0dd184f75-JNB
+1 &lt; Cache-Control: max-age=1800
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Tue, 09 Mar 2021 17:14:32 GMT
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"max_age":604800,"report_to":"cf-nel"}
+1 &lt; Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=Y1h3E3%2F5nQde1oNAAZCNjTYVDjUmmdCH4z2e7UQgFd5jpeo5HZrECLJ0NtvmUb0MkZY96CzKHgKZ42o3nnIIMYAxuo2xbaS9"}],"max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=d4fb479efa377a41588859ee2ba07b5681615310072; expires=Thu, 08-Apr-21 17:14:32 GMT; path=/; domain=.dog.ceo; HttpOnly; SameSite=Lax; Secure
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: 
+1 &lt; Via: 1.1 varnish (Varnish/6.3), 1.1 varnish (Varnish/6.3)
+1 &lt; X-Cache: HIT
+1 &lt; X-Cache-Age: 21247
+1 &lt; X-Cache-Hits: 6649
+1 &lt; X-Powered-By: PHP/7.3.17
+1 &lt; cf-request-id: 08b994c28300004f75d5a70000000001
+{"message":{"affenpinscher":[],"african":[],"airedale":[],"akita":[],"appenzeller":[],"australian":["shepherd"],"basenji":[],"beagle":[],"bluetick":[],"borzoi":[],"bouvier":[],"boxer":[],"brabancon":[],"briard":[],"buhund":["norwegian"],"bulldog":["boston","english","french"],"bullterrier":["staffordshire"],"cairn":[],"cattledog":["australian"],"chihuahua":[],"chow":[],"clumber":[],"cockapoo":[],"collie":["border"],"coonhound":[],"corgi":["cardigan"],"cotondetulear":[],"dachshund":[],"dalmatian":[],"dane":["great"],"deerhound":["scottish"],"dhole":[],"dingo":[],"doberman":[],"elkhound":["norwegian"],"entlebucher":[],"eskimo":[],"finnish":["lapphund"],"frise":["bichon"],"germanshepherd":[],"greyhound":["italian"],"groenendael":[],"havanese":[],"hound":["afghan","basset","blood","english","ibizan","plott","walker"],"husky":[],"keeshond":[],"kelpie":[],"komondor":[],"kuvasz":[],"labrador":[],"leonberg":[],"lhasa":[],"malamute":[],"malinois":[],"maltese":[],"mastiff":["bull","english","tibetan"],"mexicanhairless":[],"mix":[],"mountain":["bernese","swiss"],"newfoundland":[],"otterhound":[],"ovcharka":["caucasian"],"papillon":[],"pekinese":[],"pembroke":[],"pinscher":["miniature"],"pitbull":[],"pointer":["german","germanlonghair"],"pomeranian":[],"poodle":["miniature","standard","toy"],"pug":[],"puggle":[],"pyrenees":[],"redbone":[],"retriever":["chesapeake","curly","flatcoated","golden"],"ridgeback":["rhodesian"],"rottweiler":[],"saluki":[],"samoyed":[],"schipperke":[],"schnauzer":["giant","miniature"],"setter":["english","gordon","irish"],"sheepdog":["english","shetland"],"shiba":[],"shihtzu":[],"spaniel":["blenheim","brittany","cocker","irish","japanese","sussex","welsh"],"springer":["english"],"stbernard":[],"terrier":["american","australian","bedlington","border","dandie","fox","irish","kerryblue","lakeland","norfolk","norwich","patterdale","russell","scottish","sealyham","silky","tibetan","toy","westhighland","wheaten","yorkshire"],"vizsla":[],"waterdog":["spanish"],"weimaraner":[],"whippet":[],"wolfhound":["irish"]},"status":"success"}</div>
+<div class="step-row">
+<div class="step-container" id="10">
+<div class="step-ref passed">10</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="11">
+<div class="step-ref passed">11</div>
+<div class="step-cell passed">Then print response</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="preformatted" data-parent="11">19:14:31.831 [print] {
+  "message": {
+    "pyrenees": [
+    ],
+    "affenpinscher": [
+    ],
+    "kuvasz": [
+    ],
+    "dingo": [
+    ],
+    "pug": [
+    ],
+    "husky": [
+    ],
+    "dachshund": [
+    ],
+    "greyhound": [
+      "italian"
+    ],
+    "buhund": [
+      "norwegian"
+    ],
+    "deerhound": [
+      "scottish"
+    ],
+    "appenzeller": [
+    ],
+    "schipperke": [
+    ],
+    "stbernard": [
+    ],
+    "basenji": [
+    ],
+    "mountain": [
+      "bernese",
+      "swiss"
+    ],
+    "retriever": [
+      "chesapeake",
+      "curly",
+      "flatcoated",
+      "golden"
+    ],
+    "beagle": [
+    ],
+    "coonhound": [
+    ],
+    "dhole": [
+    ],
+    "rottweiler": [
+    ],
+    "airedale": [
+    ],
+    "elkhound": [
+      "norwegian"
+    ],
+    "brabancon": [
+    ],
+    "springer": [
+      "english"
+    ],
+    "whippet": [
+    ],
+    "mexicanhairless": [
+    ],
+    "boxer": [
+    ],
+    "labrador": [
+    ],
+    "kelpie": [
+    ],
+    "pointer": [
+      "german",
+      "germanlonghair"
+    ],
+    "chow": [
+    ],
+    "akita": [
+    ],
+    "shihtzu": [
+    ],
+    "bulldog": [
+      "boston",
+      "english",
+      "french"
+    ],
+    "briard": [
+    ],
+    "cattledog": [
+      "australian"
+    ],
+    "leonberg": [
+    ],
+    "entlebucher": [
+    ],
+    "havanese": [
+    ],
+    "saluki": [
+    ],
+    "collie": [
+      "border"
+    ],
+    "pekinese": [
+    ],
+    "bluetick": [
+    ],
+    "germanshepherd": [
+    ],
+    "weimaraner": [
+    ],
+    "schnauzer": [
+      "giant",
+      "miniature"
+    ],
+    "otterhound": [
+    ],
+    "australian": [
+      "shepherd"
+    ],
+    "cockapoo": [
+    ],
+    "ovcharka": [
+      "caucasian"
+    ],
+    "mastiff": [
+      "bull",
+      "english",
+      "tibetan"
+    ],
+    "sheepdog": [
+      "english",
+      "shetland"
+    ],
+    "eskimo": [
+    ],
+    "samoyed": [
+    ],
+    "corgi": [
+      "cardigan"
+    ],
+    "malamute": [
+    ],
+    "papillon": [
+    ],
+    "chihuahua": [
+    ],
+    "lhasa": [
+    ],
+    "pembroke": [
+    ],
+    "spaniel": [
+      "blenheim",
+      "brittany",
+      "cocker",
+      "irish",
+      "japanese",
+      "sussex",
+      "welsh"
+    ],
+    "clumber": [
+    ],
+    "ridgeback": [
+      "rhodesian"
+    ],
+    "keeshond": [
+    ],
+    "pitbull": [
+    ],
+    "dane": [
+      "great"
+    ],
+    "redbone": [
+    ],
+    "waterdog": [
+      "spanish"
+    ],
+    "bouvier": [
+    ],
+    "mix": [
+    ],
+    "komondor": [
+    ],
+    "malinois": [
+    ],
+    "cotondetulear": [
+    ],
+    "puggle": [
+    ],
+    "borzoi": [
+    ],
+    "poodle": [
+      "miniature",
+      "standard",
+      "toy"
+    ],
+    "groenendael": [
+    ],
+    "cairn": [
+    ],
+    "hound": [
+      "afghan",
+      "basset",
+      "blood",
+      "english",
+      "ibizan",
+      "plott",
+      "walker"
+    ],
+    "terrier": [
+      "american",
+      "australian",
+      "bedlington",
+      "border",
+      "dandie",
+      "fox",
+      "irish",
+      "kerryblue",
+      "lakeland",
+      "norfolk",
+      "norwich",
+      "patterdale",
+      "russell",
+      "scottish",
+      "sealyham",
+      "silky",
+      "tibetan",
+      "toy",
+      "westhighland",
+      "wheaten",
+      "yorkshire"
+    ],
+    "maltese": [
+    ],
+    "bullterrier": [
+      "staffordshire"
+    ],
+    "finnish": [
+      "lapphund"
+    ],
+    "african": [
+    ],
+    "newfoundland": [
+    ],
+    "shiba": [
+    ],
+    "pomeranian": [
+    ],
+    "pinscher": [
+      "miniature"
+    ],
+    "setter": [
+      "english",
+      "gordon",
+      "irish"
+    ],
+    "frise": [
+      "bichon"
+    ],
+    "vizsla": [
+    ],
+    "wolfhound": [
+      "irish"
+    ],
+    "dalmatian": [
+    ],
+    "doberman": [
+    ]
+  },
+  "status": "success"
+}</div>
+<div class="step-row">
+<div class="step-container" id="12">
+<div class="step-ref passed">12</div>
+<div class="step-cell passed">And match response.message.retriever != null</div>
+</div>
+<div class="time-cell passed">8</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="13">
+<div class="step-ref passed">13</div>
+<div class="step-cell passed">Then print response</div>
+</div>
+<div class="time-cell passed">4</div>
+</div>
+<div class="preformatted" data-parent="13">19:14:31.844 [print] {
+  "message": {
+    "pyrenees": [
+    ],
+    "affenpinscher": [
+    ],
+    "kuvasz": [
+    ],
+    "dingo": [
+    ],
+    "pug": [
+    ],
+    "husky": [
+    ],
+    "dachshund": [
+    ],
+    "greyhound": [
+      "italian"
+    ],
+    "buhund": [
+      "norwegian"
+    ],
+    "deerhound": [
+      "scottish"
+    ],
+    "appenzeller": [
+    ],
+    "schipperke": [
+    ],
+    "stbernard": [
+    ],
+    "basenji": [
+    ],
+    "mountain": [
+      "bernese",
+      "swiss"
+    ],
+    "retriever": [
+      "chesapeake",
+      "curly",
+      "flatcoated",
+      "golden"
+    ],
+    "beagle": [
+    ],
+    "coonhound": [
+    ],
+    "dhole": [
+    ],
+    "rottweiler": [
+    ],
+    "airedale": [
+    ],
+    "elkhound": [
+      "norwegian"
+    ],
+    "brabancon": [
+    ],
+    "springer": [
+      "english"
+    ],
+    "whippet": [
+    ],
+    "mexicanhairless": [
+    ],
+    "boxer": [
+    ],
+    "labrador": [
+    ],
+    "kelpie": [
+    ],
+    "pointer": [
+      "german",
+      "germanlonghair"
+    ],
+    "chow": [
+    ],
+    "akita": [
+    ],
+    "shihtzu": [
+    ],
+    "bulldog": [
+      "boston",
+      "english",
+      "french"
+    ],
+    "briard": [
+    ],
+    "cattledog": [
+      "australian"
+    ],
+    "leonberg": [
+    ],
+    "entlebucher": [
+    ],
+    "havanese": [
+    ],
+    "saluki": [
+    ],
+    "collie": [
+      "border"
+    ],
+    "pekinese": [
+    ],
+    "bluetick": [
+    ],
+    "germanshepherd": [
+    ],
+    "weimaraner": [
+    ],
+    "schnauzer": [
+      "giant",
+      "miniature"
+    ],
+    "otterhound": [
+    ],
+    "australian": [
+      "shepherd"
+    ],
+    "cockapoo": [
+    ],
+    "ovcharka": [
+      "caucasian"
+    ],
+    "mastiff": [
+      "bull",
+      "english",
+      "tibetan"
+    ],
+    "sheepdog": [
+      "english",
+      "shetland"
+    ],
+    "eskimo": [
+    ],
+    "samoyed": [
+    ],
+    "corgi": [
+      "cardigan"
+    ],
+    "malamute": [
+    ],
+    "papillon": [
+    ],
+    "chihuahua": [
+    ],
+    "lhasa": [
+    ],
+    "pembroke": [
+    ],
+    "spaniel": [
+      "blenheim",
+      "brittany",
+      "cocker",
+      "irish",
+      "japanese",
+      "sussex",
+      "welsh"
+    ],
+    "clumber": [
+    ],
+    "ridgeback": [
+      "rhodesian"
+    ],
+    "keeshond": [
+    ],
+    "pitbull": [
+    ],
+    "dane": [
+      "great"
+    ],
+    "redbone": [
+    ],
+    "waterdog": [
+      "spanish"
+    ],
+    "bouvier": [
+    ],
+    "mix": [
+    ],
+    "komondor": [
+    ],
+    "malinois": [
+    ],
+    "cotondetulear": [
+    ],
+    "puggle": [
+    ],
+    "borzoi": [
+    ],
+    "poodle": [
+      "miniature",
+      "standard",
+      "toy"
+    ],
+    "groenendael": [
+    ],
+    "cairn": [
+    ],
+    "hound": [
+      "afghan",
+      "basset",
+      "blood",
+      "english",
+      "ibizan",
+      "plott",
+      "walker"
+    ],
+    "terrier": [
+      "american",
+      "australian",
+      "bedlington",
+      "border",
+      "dandie",
+      "fox",
+      "irish",
+      "kerryblue",
+      "lakeland",
+      "norfolk",
+      "norwich",
+      "patterdale",
+      "russell",
+      "scottish",
+      "sealyham",
+      "silky",
+      "tibetan",
+      "toy",
+      "westhighland",
+      "wheaten",
+      "yorkshire"
+    ],
+    "maltese": [
+    ],
+    "bullterrier": [
+      "staffordshire"
+    ],
+    "finnish": [
+      "lapphund"
+    ],
+    "african": [
+    ],
+    "newfoundland": [
+    ],
+    "shiba": [
+    ],
+    "pomeranian": [
+    ],
+    "pinscher": [
+      "miniature"
+    ],
+    "setter": [
+      "english",
+      "gordon",
+      "irish"
+    ],
+    "frise": [
+      "bichon"
+    ],
+    "vizsla": [
+    ],
+    "wolfhound": [
+      "irish"
+    ],
+    "dalmatian": [
+    ],
+    "doberman": [
+    ]
+  },
+  "status": "success"
+}</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[3:21]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [3:21]</span><span class="scenario-name">List of sub breeds for "retriever" </span>
+</div>
+<div class="scenario-time passed">ms: 593</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[3:21]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[3:21]bg">
+<div class="step-container" id="14">
+<div class="step-ref bg-step">14</div>
+<div class="step-cell passed">* def json1 = read('test1.json')</div>
+</div>
+<div class="time-cell passed">6</div>
+</div>
+<div class="preformatted" data-parent="14">19:14:31.868 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="step-row">
+<div class="step-container" id="15">
+<div class="step-ref passed">15</div>
+<div class="step-cell passed">Given url  'https://dog.ceo/api/breed/retriever/list'</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="16">
+<div class="step-ref passed">16</div>
+<div class="step-cell passed">When method GET</div>
+</div>
+<div class="time-cell passed">571</div>
+</div>
+<div class="preformatted" data-parent="16">19:14:31.881 request:
+1 &gt; GET https://dog.ceo/api/breed/retriever/list
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: dog.ceo
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_281)
+
+19:14:32.449 response time in milliseconds: 565.37
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 0
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 62d5f0b4c8704f7b-JNB
+1 &lt; Cache-Control: max-age=1800
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Tue, 09 Mar 2021 17:14:33 GMT
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"max_age":604800,"report_to":"cf-nel"}
+1 &lt; Report-To: {"max_age":604800,"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=wngLrK2EnRDG8WZ63DIYmJxrg9yAvNucsgb6n89PX6xhYM8Qp0xpgt6Im9QQ3ZJLZI21e7r0lAVoL4kWN6lPTTxjPs83K5UR"}],"group":"cf-nel"}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=d6284884387782ac3bb7f4e5870e0acad1615310073; expires=Thu, 08-Apr-21 17:14:33 GMT; path=/; domain=.dog.ceo; HttpOnly; SameSite=Lax; Secure
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: 
+1 &lt; Via: 1.1 varnish (Varnish/6.3), 1.1 varnish (Varnish/6.3)
+1 &lt; X-Cache: HIT
+1 &lt; X-Cache-Age: 8648
+1 &lt; X-Cache-Hits: 13
+1 &lt; X-Powered-By: PHP/7.3.17
+1 &lt; cf-request-id: 08b994c4fe00004f7b63045000000001
+{"message":["chesapeake","curly","flatcoated","golden"],"status":"success"}</div>
+<div class="step-row">
+<div class="step-container" id="17">
+<div class="step-ref passed">17</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="18">
+<div class="step-ref passed">18</div>
+<div class="step-cell passed">Then print response</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="18">19:14:32.451 [print] {
+  "message": [
+    "chesapeake",
+    "curly",
+    "flatcoated",
+    "golden"
+  ],
+  "status": "success"
+}</div>
+<div class="step-row">
+<div class="step-container" id="19">
+<div class="step-ref passed">19</div>
+<div class="step-cell passed">And match response == json1[1]</div>
+</div>
+<div class="time-cell passed">11</div>
+</div>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[4:28]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [4:28]</span><span class="scenario-name">Random image / link for sub-breed "golden" </span>
+</div>
+<div class="scenario-time passed">ms: 549</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[4:28]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[4:28]bg">
+<div class="step-container" id="20">
+<div class="step-ref bg-step">20</div>
+<div class="step-cell passed">* def json1 = read('test1.json')</div>
+</div>
+<div class="time-cell passed">9</div>
+</div>
+<div class="preformatted" data-parent="20">19:14:32.485 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="step-row">
+<div class="step-container" id="21">
+<div class="step-ref passed">21</div>
+<div class="step-cell passed">Given url 'https://dog.ceo/api/breed/retriever/golden/images/random'</div>
+</div>
+<div class="time-cell passed">5</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="22">
+<div class="step-ref passed">22</div>
+<div class="step-cell passed">When method GET</div>
+</div>
+<div class="time-cell passed">534</div>
+</div>
+<div class="preformatted" data-parent="22">19:14:32.506 request:
+1 &gt; GET https://dog.ceo/api/breed/retriever/golden/images/random
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: dog.ceo
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_281)
+
+19:14:33.036 response time in milliseconds: 526.29
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 0
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 62d5f0b85e5a4f69-JNB
+1 &lt; Cache-Control: no-cache, private
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Tue, 09 Mar 2021 17:14:34 GMT
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; NEL: {"max_age":604800,"report_to":"cf-nel"}
+1 &lt; Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=dNcuoXCB%2F1iUyZQ%2FiLqllbp93sLTuqOOSWQwX%2FYNFmV804OmElgpkuIFtQZXbDysoYX3XERjIhuDk6HrngBvRrBvcF8ZozRy"}],"max_age":604800}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=d22d86badd3f4ea251d234448b8761a341615310073; expires=Thu, 08-Apr-21 17:14:33 GMT; path=/; domain=.dog.ceo; HttpOnly; SameSite=Lax; Secure
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: 
+1 &lt; Via: 1.1 varnish (Varnish/6.3), 1.1 varnish (Varnish/6.3)
+1 &lt; X-Cache: MISS
+1 &lt; X-Cache-Hits: 0
+1 &lt; X-Powered-By: PHP/7.3.17
+1 &lt; cf-request-id: 08b994c73a00004f69359ce000000001
+{"message":"https:\/\/images.dog.ceo\/breeds\/retriever-golden\/n02099601_5051.jpg","status":"success"}</div>
+<div class="step-row">
+<div class="step-container" id="23">
+<div class="step-ref passed">23</div>
+<div class="step-cell passed">Then status 200</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="24">
+<div class="step-ref passed">24</div>
+<div class="step-cell passed">Then print response</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="24">19:14:33.038 [print] {
+  "message": "https://images.dog.ceo/breeds/retriever-golden/n02099601_5051.jpg",
+  "status": "success"
+}</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

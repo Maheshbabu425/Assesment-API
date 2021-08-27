@@ -1,0 +1,693 @@
+19:14:28.837 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+19:14:30.119 request:
+1 > GET https://dog.ceo/api/breeds/list/all
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: dog.ceo
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_281)
+
+19:14:31.134 response time in milliseconds: 995.46
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 62d5f0abe95b4f99-JNB
+1 < Cache-Control: max-age=1800
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Tue, 09 Mar 2021 17:14:32 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"max_age":604800,"report_to":"cf-nel"}
+1 < Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=0EDbgnujfQE8mMq3tYElLBXbjwoKwRMBthjJqHmc9EkJ3zGKstryWaeoeqxlNbqmhFCkUXuXdfVH7PXkCpUb4U%2FhM2JXXc9G"}],"max_age":604800}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d2f5358f405042c0afab3e83f24062a601615310071; expires=Thu, 08-Apr-21 17:14:31 GMT; path=/; domain=.dog.ceo; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: 
+1 < Via: 1.1 varnish (Varnish/6.3), 1.1 varnish (Varnish/6.3)
+1 < X-Cache: HIT
+1 < X-Cache-Age: 21247
+1 < X-Cache-Hits: 6648
+1 < X-Powered-By: PHP/7.3.17
+1 < cf-request-id: 08b994bf7100004f9980268000000001
+{"message":{"affenpinscher":[],"african":[],"airedale":[],"akita":[],"appenzeller":[],"australian":["shepherd"],"basenji":[],"beagle":[],"bluetick":[],"borzoi":[],"bouvier":[],"boxer":[],"brabancon":[],"briard":[],"buhund":["norwegian"],"bulldog":["boston","english","french"],"bullterrier":["staffordshire"],"cairn":[],"cattledog":["australian"],"chihuahua":[],"chow":[],"clumber":[],"cockapoo":[],"collie":["border"],"coonhound":[],"corgi":["cardigan"],"cotondetulear":[],"dachshund":[],"dalmatian":[],"dane":["great"],"deerhound":["scottish"],"dhole":[],"dingo":[],"doberman":[],"elkhound":["norwegian"],"entlebucher":[],"eskimo":[],"finnish":["lapphund"],"frise":["bichon"],"germanshepherd":[],"greyhound":["italian"],"groenendael":[],"havanese":[],"hound":["afghan","basset","blood","english","ibizan","plott","walker"],"husky":[],"keeshond":[],"kelpie":[],"komondor":[],"kuvasz":[],"labrador":[],"leonberg":[],"lhasa":[],"malamute":[],"malinois":[],"maltese":[],"mastiff":["bull","english","tibetan"],"mexicanhairless":[],"mix":[],"mountain":["bernese","swiss"],"newfoundland":[],"otterhound":[],"ovcharka":["caucasian"],"papillon":[],"pekinese":[],"pembroke":[],"pinscher":["miniature"],"pitbull":[],"pointer":["german","germanlonghair"],"pomeranian":[],"poodle":["miniature","standard","toy"],"pug":[],"puggle":[],"pyrenees":[],"redbone":[],"retriever":["chesapeake","curly","flatcoated","golden"],"ridgeback":["rhodesian"],"rottweiler":[],"saluki":[],"samoyed":[],"schipperke":[],"schnauzer":["giant","miniature"],"setter":["english","gordon","irish"],"sheepdog":["english","shetland"],"shiba":[],"shihtzu":[],"spaniel":["blenheim","brittany","cocker","irish","japanese","sussex","welsh"],"springer":["english"],"stbernard":[],"terrier":["american","australian","bedlington","border","dandie","fox","irish","kerryblue","lakeland","norfolk","norwich","patterdale","russell","scottish","sealyham","silky","tibetan","toy","westhighland","wheaten","yorkshire"],"vizsla":[],"waterdog":["spanish"],"weimaraner":[],"whippet":[],"wolfhound":["irish"]},"status":"success"}
+
+19:14:31.148 [print]
+19:14:31.213 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+19:14:31.228 request:
+1 > GET https://dog.ceo/api/breeds/list/all
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: dog.ceo
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_281)
+
+19:14:31.825 response time in milliseconds: 590.03
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 62d5f0b0dd184f75-JNB
+1 < Cache-Control: max-age=1800
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Tue, 09 Mar 2021 17:14:32 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"max_age":604800,"report_to":"cf-nel"}
+1 < Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=Y1h3E3%2F5nQde1oNAAZCNjTYVDjUmmdCH4z2e7UQgFd5jpeo5HZrECLJ0NtvmUb0MkZY96CzKHgKZ42o3nnIIMYAxuo2xbaS9"}],"max_age":604800}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d4fb479efa377a41588859ee2ba07b5681615310072; expires=Thu, 08-Apr-21 17:14:32 GMT; path=/; domain=.dog.ceo; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: 
+1 < Via: 1.1 varnish (Varnish/6.3), 1.1 varnish (Varnish/6.3)
+1 < X-Cache: HIT
+1 < X-Cache-Age: 21247
+1 < X-Cache-Hits: 6649
+1 < X-Powered-By: PHP/7.3.17
+1 < cf-request-id: 08b994c28300004f75d5a70000000001
+{"message":{"affenpinscher":[],"african":[],"airedale":[],"akita":[],"appenzeller":[],"australian":["shepherd"],"basenji":[],"beagle":[],"bluetick":[],"borzoi":[],"bouvier":[],"boxer":[],"brabancon":[],"briard":[],"buhund":["norwegian"],"bulldog":["boston","english","french"],"bullterrier":["staffordshire"],"cairn":[],"cattledog":["australian"],"chihuahua":[],"chow":[],"clumber":[],"cockapoo":[],"collie":["border"],"coonhound":[],"corgi":["cardigan"],"cotondetulear":[],"dachshund":[],"dalmatian":[],"dane":["great"],"deerhound":["scottish"],"dhole":[],"dingo":[],"doberman":[],"elkhound":["norwegian"],"entlebucher":[],"eskimo":[],"finnish":["lapphund"],"frise":["bichon"],"germanshepherd":[],"greyhound":["italian"],"groenendael":[],"havanese":[],"hound":["afghan","basset","blood","english","ibizan","plott","walker"],"husky":[],"keeshond":[],"kelpie":[],"komondor":[],"kuvasz":[],"labrador":[],"leonberg":[],"lhasa":[],"malamute":[],"malinois":[],"maltese":[],"mastiff":["bull","english","tibetan"],"mexicanhairless":[],"mix":[],"mountain":["bernese","swiss"],"newfoundland":[],"otterhound":[],"ovcharka":["caucasian"],"papillon":[],"pekinese":[],"pembroke":[],"pinscher":["miniature"],"pitbull":[],"pointer":["german","germanlonghair"],"pomeranian":[],"poodle":["miniature","standard","toy"],"pug":[],"puggle":[],"pyrenees":[],"redbone":[],"retriever":["chesapeake","curly","flatcoated","golden"],"ridgeback":["rhodesian"],"rottweiler":[],"saluki":[],"samoyed":[],"schipperke":[],"schnauzer":["giant","miniature"],"setter":["english","gordon","irish"],"sheepdog":["english","shetland"],"shiba":[],"shihtzu":[],"spaniel":["blenheim","brittany","cocker","irish","japanese","sussex","welsh"],"springer":["english"],"stbernard":[],"terrier":["american","australian","bedlington","border","dandie","fox","irish","kerryblue","lakeland","norfolk","norwich","patterdale","russell","scottish","sealyham","silky","tibetan","toy","westhighland","wheaten","yorkshire"],"vizsla":[],"waterdog":["spanish"],"weimaraner":[],"whippet":[],"wolfhound":["irish"]},"status":"success"}
+
+19:14:31.831 [print] {
+  "message": {
+    "pyrenees": [
+    ],
+    "affenpinscher": [
+    ],
+    "kuvasz": [
+    ],
+    "dingo": [
+    ],
+    "pug": [
+    ],
+    "husky": [
+    ],
+    "dachshund": [
+    ],
+    "greyhound": [
+      "italian"
+    ],
+    "buhund": [
+      "norwegian"
+    ],
+    "deerhound": [
+      "scottish"
+    ],
+    "appenzeller": [
+    ],
+    "schipperke": [
+    ],
+    "stbernard": [
+    ],
+    "basenji": [
+    ],
+    "mountain": [
+      "bernese",
+      "swiss"
+    ],
+    "retriever": [
+      "chesapeake",
+      "curly",
+      "flatcoated",
+      "golden"
+    ],
+    "beagle": [
+    ],
+    "coonhound": [
+    ],
+    "dhole": [
+    ],
+    "rottweiler": [
+    ],
+    "airedale": [
+    ],
+    "elkhound": [
+      "norwegian"
+    ],
+    "brabancon": [
+    ],
+    "springer": [
+      "english"
+    ],
+    "whippet": [
+    ],
+    "mexicanhairless": [
+    ],
+    "boxer": [
+    ],
+    "labrador": [
+    ],
+    "kelpie": [
+    ],
+    "pointer": [
+      "german",
+      "germanlonghair"
+    ],
+    "chow": [
+    ],
+    "akita": [
+    ],
+    "shihtzu": [
+    ],
+    "bulldog": [
+      "boston",
+      "english",
+      "french"
+    ],
+    "briard": [
+    ],
+    "cattledog": [
+      "australian"
+    ],
+    "leonberg": [
+    ],
+    "entlebucher": [
+    ],
+    "havanese": [
+    ],
+    "saluki": [
+    ],
+    "collie": [
+      "border"
+    ],
+    "pekinese": [
+    ],
+    "bluetick": [
+    ],
+    "germanshepherd": [
+    ],
+    "weimaraner": [
+    ],
+    "schnauzer": [
+      "giant",
+      "miniature"
+    ],
+    "otterhound": [
+    ],
+    "australian": [
+      "shepherd"
+    ],
+    "cockapoo": [
+    ],
+    "ovcharka": [
+      "caucasian"
+    ],
+    "mastiff": [
+      "bull",
+      "english",
+      "tibetan"
+    ],
+    "sheepdog": [
+      "english",
+      "shetland"
+    ],
+    "eskimo": [
+    ],
+    "samoyed": [
+    ],
+    "corgi": [
+      "cardigan"
+    ],
+    "malamute": [
+    ],
+    "papillon": [
+    ],
+    "chihuahua": [
+    ],
+    "lhasa": [
+    ],
+    "pembroke": [
+    ],
+    "spaniel": [
+      "blenheim",
+      "brittany",
+      "cocker",
+      "irish",
+      "japanese",
+      "sussex",
+      "welsh"
+    ],
+    "clumber": [
+    ],
+    "ridgeback": [
+      "rhodesian"
+    ],
+    "keeshond": [
+    ],
+    "pitbull": [
+    ],
+    "dane": [
+      "great"
+    ],
+    "redbone": [
+    ],
+    "waterdog": [
+      "spanish"
+    ],
+    "bouvier": [
+    ],
+    "mix": [
+    ],
+    "komondor": [
+    ],
+    "malinois": [
+    ],
+    "cotondetulear": [
+    ],
+    "puggle": [
+    ],
+    "borzoi": [
+    ],
+    "poodle": [
+      "miniature",
+      "standard",
+      "toy"
+    ],
+    "groenendael": [
+    ],
+    "cairn": [
+    ],
+    "hound": [
+      "afghan",
+      "basset",
+      "blood",
+      "english",
+      "ibizan",
+      "plott",
+      "walker"
+    ],
+    "terrier": [
+      "american",
+      "australian",
+      "bedlington",
+      "border",
+      "dandie",
+      "fox",
+      "irish",
+      "kerryblue",
+      "lakeland",
+      "norfolk",
+      "norwich",
+      "patterdale",
+      "russell",
+      "scottish",
+      "sealyham",
+      "silky",
+      "tibetan",
+      "toy",
+      "westhighland",
+      "wheaten",
+      "yorkshire"
+    ],
+    "maltese": [
+    ],
+    "bullterrier": [
+      "staffordshire"
+    ],
+    "finnish": [
+      "lapphund"
+    ],
+    "african": [
+    ],
+    "newfoundland": [
+    ],
+    "shiba": [
+    ],
+    "pomeranian": [
+    ],
+    "pinscher": [
+      "miniature"
+    ],
+    "setter": [
+      "english",
+      "gordon",
+      "irish"
+    ],
+    "frise": [
+      "bichon"
+    ],
+    "vizsla": [
+    ],
+    "wolfhound": [
+      "irish"
+    ],
+    "dalmatian": [
+    ],
+    "doberman": [
+    ]
+  },
+  "status": "success"
+}
+
+19:14:31.844 [print] {
+  "message": {
+    "pyrenees": [
+    ],
+    "affenpinscher": [
+    ],
+    "kuvasz": [
+    ],
+    "dingo": [
+    ],
+    "pug": [
+    ],
+    "husky": [
+    ],
+    "dachshund": [
+    ],
+    "greyhound": [
+      "italian"
+    ],
+    "buhund": [
+      "norwegian"
+    ],
+    "deerhound": [
+      "scottish"
+    ],
+    "appenzeller": [
+    ],
+    "schipperke": [
+    ],
+    "stbernard": [
+    ],
+    "basenji": [
+    ],
+    "mountain": [
+      "bernese",
+      "swiss"
+    ],
+    "retriever": [
+      "chesapeake",
+      "curly",
+      "flatcoated",
+      "golden"
+    ],
+    "beagle": [
+    ],
+    "coonhound": [
+    ],
+    "dhole": [
+    ],
+    "rottweiler": [
+    ],
+    "airedale": [
+    ],
+    "elkhound": [
+      "norwegian"
+    ],
+    "brabancon": [
+    ],
+    "springer": [
+      "english"
+    ],
+    "whippet": [
+    ],
+    "mexicanhairless": [
+    ],
+    "boxer": [
+    ],
+    "labrador": [
+    ],
+    "kelpie": [
+    ],
+    "pointer": [
+      "german",
+      "germanlonghair"
+    ],
+    "chow": [
+    ],
+    "akita": [
+    ],
+    "shihtzu": [
+    ],
+    "bulldog": [
+      "boston",
+      "english",
+      "french"
+    ],
+    "briard": [
+    ],
+    "cattledog": [
+      "australian"
+    ],
+    "leonberg": [
+    ],
+    "entlebucher": [
+    ],
+    "havanese": [
+    ],
+    "saluki": [
+    ],
+    "collie": [
+      "border"
+    ],
+    "pekinese": [
+    ],
+    "bluetick": [
+    ],
+    "germanshepherd": [
+    ],
+    "weimaraner": [
+    ],
+    "schnauzer": [
+      "giant",
+      "miniature"
+    ],
+    "otterhound": [
+    ],
+    "australian": [
+      "shepherd"
+    ],
+    "cockapoo": [
+    ],
+    "ovcharka": [
+      "caucasian"
+    ],
+    "mastiff": [
+      "bull",
+      "english",
+      "tibetan"
+    ],
+    "sheepdog": [
+      "english",
+      "shetland"
+    ],
+    "eskimo": [
+    ],
+    "samoyed": [
+    ],
+    "corgi": [
+      "cardigan"
+    ],
+    "malamute": [
+    ],
+    "papillon": [
+    ],
+    "chihuahua": [
+    ],
+    "lhasa": [
+    ],
+    "pembroke": [
+    ],
+    "spaniel": [
+      "blenheim",
+      "brittany",
+      "cocker",
+      "irish",
+      "japanese",
+      "sussex",
+      "welsh"
+    ],
+    "clumber": [
+    ],
+    "ridgeback": [
+      "rhodesian"
+    ],
+    "keeshond": [
+    ],
+    "pitbull": [
+    ],
+    "dane": [
+      "great"
+    ],
+    "redbone": [
+    ],
+    "waterdog": [
+      "spanish"
+    ],
+    "bouvier": [
+    ],
+    "mix": [
+    ],
+    "komondor": [
+    ],
+    "malinois": [
+    ],
+    "cotondetulear": [
+    ],
+    "puggle": [
+    ],
+    "borzoi": [
+    ],
+    "poodle": [
+      "miniature",
+      "standard",
+      "toy"
+    ],
+    "groenendael": [
+    ],
+    "cairn": [
+    ],
+    "hound": [
+      "afghan",
+      "basset",
+      "blood",
+      "english",
+      "ibizan",
+      "plott",
+      "walker"
+    ],
+    "terrier": [
+      "american",
+      "australian",
+      "bedlington",
+      "border",
+      "dandie",
+      "fox",
+      "irish",
+      "kerryblue",
+      "lakeland",
+      "norfolk",
+      "norwich",
+      "patterdale",
+      "russell",
+      "scottish",
+      "sealyham",
+      "silky",
+      "tibetan",
+      "toy",
+      "westhighland",
+      "wheaten",
+      "yorkshire"
+    ],
+    "maltese": [
+    ],
+    "bullterrier": [
+      "staffordshire"
+    ],
+    "finnish": [
+      "lapphund"
+    ],
+    "african": [
+    ],
+    "newfoundland": [
+    ],
+    "shiba": [
+    ],
+    "pomeranian": [
+    ],
+    "pinscher": [
+      "miniature"
+    ],
+    "setter": [
+      "english",
+      "gordon",
+      "irish"
+    ],
+    "frise": [
+      "bichon"
+    ],
+    "vizsla": [
+    ],
+    "wolfhound": [
+      "irish"
+    ],
+    "dalmatian": [
+    ],
+    "doberman": [
+    ]
+  },
+  "status": "success"
+}
+
+19:14:31.868 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+19:14:31.881 request:
+1 > GET https://dog.ceo/api/breed/retriever/list
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: dog.ceo
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_281)
+
+19:14:32.449 response time in milliseconds: 565.37
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 62d5f0b4c8704f7b-JNB
+1 < Cache-Control: max-age=1800
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Tue, 09 Mar 2021 17:14:33 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"max_age":604800,"report_to":"cf-nel"}
+1 < Report-To: {"max_age":604800,"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=wngLrK2EnRDG8WZ63DIYmJxrg9yAvNucsgb6n89PX6xhYM8Qp0xpgt6Im9QQ3ZJLZI21e7r0lAVoL4kWN6lPTTxjPs83K5UR"}],"group":"cf-nel"}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d6284884387782ac3bb7f4e5870e0acad1615310073; expires=Thu, 08-Apr-21 17:14:33 GMT; path=/; domain=.dog.ceo; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: 
+1 < Via: 1.1 varnish (Varnish/6.3), 1.1 varnish (Varnish/6.3)
+1 < X-Cache: HIT
+1 < X-Cache-Age: 8648
+1 < X-Cache-Hits: 13
+1 < X-Powered-By: PHP/7.3.17
+1 < cf-request-id: 08b994c4fe00004f7b63045000000001
+{"message":["chesapeake","curly","flatcoated","golden"],"status":"success"}
+
+19:14:32.451 [print] {
+  "message": [
+    "chesapeake",
+    "curly",
+    "flatcoated",
+    "golden"
+  ],
+  "status": "success"
+}
+
+19:14:32.485 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+19:14:32.506 request:
+1 > GET https://dog.ceo/api/breed/retriever/golden/images/random
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: dog.ceo
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_281)
+
+19:14:33.036 response time in milliseconds: 526.29
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 0
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 62d5f0b85e5a4f69-JNB
+1 < Cache-Control: no-cache, private
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Tue, 09 Mar 2021 17:14:34 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"max_age":604800,"report_to":"cf-nel"}
+1 < Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=dNcuoXCB%2F1iUyZQ%2FiLqllbp93sLTuqOOSWQwX%2FYNFmV804OmElgpkuIFtQZXbDysoYX3XERjIhuDk6HrngBvRrBvcF8ZozRy"}],"max_age":604800}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d22d86badd3f4ea251d234448b8761a341615310073; expires=Thu, 08-Apr-21 17:14:33 GMT; path=/; domain=.dog.ceo; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: 
+1 < Via: 1.1 varnish (Varnish/6.3), 1.1 varnish (Varnish/6.3)
+1 < X-Cache: MISS
+1 < X-Cache-Hits: 0
+1 < X-Powered-By: PHP/7.3.17
+1 < cf-request-id: 08b994c73a00004f69359ce000000001
+{"message":"https:\/\/images.dog.ceo\/breeds\/retriever-golden\/n02099601_5051.jpg","status":"success"}
+
+19:14:33.038 [print] {
+  "message": "https://images.dog.ceo/breeds/retriever-golden/n02099601_5051.jpg",
+  "status": "success"
+}
+
+status": "success"
+}
+
+
